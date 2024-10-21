@@ -17,8 +17,8 @@
     combos {
     compatible = "zmk,combos";
         COMBO(ue, &kp LBKT, 19 15)
-        COMBO(ae, &kp LBKT, 19 25)
-        COMBO(oe, &kp LBKT, 19 17)
+        COMBO(ae, &kp SQT, 25 12)
+        COMBO(oe, &kp SEMI, 17 15)
         COMBO(esckey, &kp ESC, 2 3)
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
