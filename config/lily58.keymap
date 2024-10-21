@@ -17,8 +17,8 @@
     combos {
     compatible = "zmk,combos";
         COMBO(ue, &kp LBKT, 19 15)
-        COMBO(ae, &kp SQT, 25 12)
-        COMBO(oe, &kp SEMI, 17 15)
+        COMBO(ae, &kp SQT, 25 15)
+        COMBO(oe, &kp SEMI, 21 15)
         COMBO(esckey, &kp ESC, 2 3)
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
@@ -51,8 +51,8 @@
             bindings = <
 &kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp BSPC
 &kp TAB     &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp DEL
-&none       &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp RBKT  &kp BSLH
-&kp LSHFT   &kp Z  &kp X  &kp C    &kp V    &kp B  &kp NUBS   &kp MINUS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+&LSHFT       &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp RBKT  &kp BSLH
+&kp LCTRL   &kp Z  &kp X  &kp C    &kp V    &kp B  &kp NUBS   &kp MINUS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                         &kp LCTRL &kp LALT  &mo 1  &kp RET  &kp SPACE  &mo 2  &kp RALT &kp LGUI
             >;
         };
@@ -69,10 +69,10 @@
 
         raise_layer {
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+&trans    &trans &trans &trans  &trans  &trans                       &trans          &trans    &trans      &trans    &trans             &trans
+&trans    &trans &trans &trans  &trans  &trans                       &kp GRAVE       &kp N7     &kp N8     &kp N9    &kp KP_ASTERISK    &trans
+&trans    &trans &trans &trans  &trans  &trans                       &kp KP_SLASH    &kp N4     &kp N5     &kp N6    &kp KP_MINUS       &trans
+&trans    &trans &trans &trans  &trans  &trans     &trans   &trans   &kp N0          &kp N1     &kp N2     &kp N3    &kp KP_PLUS        &trans
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
         };
