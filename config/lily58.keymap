@@ -42,7 +42,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        hold_tap_layer_switch_1 {
+        htl1: hold_tap_layer_switch_1 {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced"; // or "tap-preferred" / "hold-preferred" depending on your use case
             tapping-term-ms = <200>; // Customize this value as needed
@@ -50,7 +50,7 @@
             #binding-cells = <2>;
             bindings = <&mo 1>, <&tog 1>;
         };
-        hold_tap_layer_switch_2 {
+        htl2: hold_tap_layer_switch_2 {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced"; // or "tap-preferred" / "hold-preferred" depending on your use case
             tapping-term-ms = <200>; // Customize this value as needed
@@ -70,7 +70,7 @@
 &kp TAB     &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp DEL
 &kp LSHFT      &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp RBKT  &kp BSLH
 &kp LCTRL   &kp Z  &kp X  &kp C    &kp V    &kp B  &kp NUBS   &kp MINUS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &ht LCTRL SPACE  &kp LALT  &hold_tap_layer_switch_1 &kp RET  &kp SPACE  &hold_tap_layer_switch_2  &kp RALT &kp LGUI
+                        &ht LCTRL SPACE  &kp LALT  &htl1 &kp RET  &kp SPACE  &htl2  &kp RALT &kp LGUI
             >;
         };
 
