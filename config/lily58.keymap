@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             label = "Tap-Dance Layer Switch";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&mo>, <&tog>;
         };
 
