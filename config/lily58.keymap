@@ -49,8 +49,8 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             label = "home_mod";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -88,21 +88,21 @@
 
         default_layer {
             bindings = <
-&kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp BSPC
-&kp TAB     &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp DEL
-&kp NUBS      &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp RBKT  &kp BSLH
-&td0   &kp Z  &kp X  &kp C    &kp V    &kp B  &kp EQUAL   &kp MINUS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &ht LCTRL SPACE  &kp LALT  &tdl1  &kp RET  &kp SPACE  &tdl2   &kp RALT &ht LGUI RET
+&kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                                  &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp BSPC
+&kp TAB     &kp Q  &kp W  &kp E    &kp R    &kp T                                                   &kp Y  &kp U    &kp I     &kp O   &kp P    &kp DEL
+&kp NUBS      &hm A LGUI  &hm S LALT &hm D LSHFT    &hm F LCTRL     &kp G                      &kp H  &hm J RCTRL    &hm K RSHFT     &hm L RAL   &hm RBKT RGUI  &kp BSLH
+&td0   &kp Z  &kp X  &kp C    &kp V    &kp B  &kp EQUAL                                 &kp MINUS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                        &ht LCTRL SPACE  &kp LALT  &tdl1  &kp RET                               &kp SPACE  &tdl2   &kp RALT &ht RGUI RET
             >;
         };
 
         lower_layer {
             bindings = <
-&soft_off &kp F1       &kp F2     &kp F11    &kp F12   &kp F5                                  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &soft_off   
+&trans &kp F1       &kp F2     &kp F11    &kp F12   &kp F5                                  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &trans
 &trans &kp GRAVE    &kp N7      &kp N8    &kp N9    &kp KP_ASTERISK                         &kp PG_UP       &kp HOME    &kp UP     &kp END     &trans   &trans
 &trans &kp KP_SLASH &kp N4      &kp N5    &kp N6   &kp KP_MINUS                             &kp PG_DN        &kp LEFT    &kp DOWN   &kp RIGHT   &kp RPAR  &trans
 &trans &kp N0       &kp N1      &kp N2    &kp N3   &kp KP_PLUS   &trans    &trans    &trans    &trans  &trans      &trans    &trans        &trans    
-                    &trans     &trans     &trans     &trans                       &trans    &trans    &trans    &trans
+                    &trans     &trans     &trans     &trans                       &trans    &trans    &trans   &soft_off 
             >;
         };
 
