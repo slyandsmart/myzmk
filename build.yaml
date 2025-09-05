@@ -4,21 +4,28 @@
 # to the `include` property. You can also use the `cmake-args` property to
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
-#
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#   - board: nice_nano_v2
-#     shield: corne_left
-#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-#     artifact-name: corne_left_with_logging
-#
+
 ---
 include:
-  - board: nice_nano_v2
+  # Lily58 nice!view Firmware
+  - keyboard: Lily58
+    board: nice_nano_v2
     shield: lily58_left nice_view_adapter nice_view
-  - board: nice_nano_v2
+    artifact-name: zmk-lily58-left
+  - keyboard: Lily58
+    board: nice_nano_v2
     shield: lily58_right nice_view_adapter nice_view
+    artifact-name: zmk-lily58-right
+
+
+  # Corne-42 nice!view Firmeare
+  - keyboard: Corne
+    board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view
+    cmake-args: -DEXTRA_CONF_FILE=../../config/corne.conf
+    artifact-name: zmk-corne-42-left
+  - keyboard: Corne
+    board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view
+    cmake-args: -DEXTRA_CONF_FILE=../../config/corne.conf
+    artifact-name: zmk-corne-42-right
