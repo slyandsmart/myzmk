@@ -9,9 +9,6 @@
 #define ADJ 3
 #define EXTRA 4
 
-#define LBRACE  LALT(LC(N7))  // sends AltGr+7 = {
-#define RBRACE  LALT(LC(N0))  // sends AltGr+0 = }
-
 / {
     behaviors {
         hm: homerow_mods {
@@ -204,7 +201,7 @@
             bindings = <
 &trans  &kp EXCLAMATION      &kp AT_SIGN      &kp HASH       &kp DOLLAR        &kp PERCENT          &kp CARET           &kp AMPERSAND          &kp ASTERISK      &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS     &trans
 &trans  &kp N1               &kp N2                 &kp N3       &kp N4            &kp N5               &kp N6                  &kp N7             &kp N8                    &kp N9                     &kp N0              &trans
-&trans  &kp N1               &kp N2                 &kp N3       &kp EQUAL         &kp MINUS             &kp N6                 &kp LALT(LC(7))      &kp LALT(LC(8))           &kp LALT(LC(9))          &kp LALT(LC(0))   &trans
+&trans  &kp N1               &kp N2                 &kp N3       &kp EQUAL         &kp MINUS             &kp N6                 &kp LALT(LC(N7))      &kp LALT(LC(N8))           &kp LALT(LC(N9))          &kp LALT(LC(N0))   &trans
                                     &kp LCTRL        &trans           &kp RET    &kp SPACE    &trans     &trans
             >;
         };
