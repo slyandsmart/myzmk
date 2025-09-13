@@ -33,8 +33,8 @@
         COMBO(win,&kp RGUI, 40 41)
 
         COMBO(tabular,&kp TAB, 0 1)
-        COMBO(backspace,&kp BACKSPACE, 10 11)
-        COMBO(at,&kp AT, 1 13)
+        COMBO(delte,&kp DEL, 10 11)
+        COMBO(at,&kp LA(LC(Q)), 1 13)
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
 
