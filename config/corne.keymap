@@ -68,7 +68,7 @@
             display-name = "NavSym";
             bindings = <
 &trans          &trans      &trans      &trans       &trans       &trans                &kp PG_UP        &kp HOME        &kp UP      &kp END     &trans      &trans
-&caps_word      &trans      &trans      &trans       &trans       &kp RA(MINUS)         &kp PG_DN        &kp LEFT        &kp DOWN    &kp RIGHT   &trans      &trans
+&caps_word      &trans      &trans      &trans       &trans       &kp LA(LC(MINUS))         &kp PG_DN        &kp LEFT        &kp DOWN    &kp RIGHT   &trans      &trans
 &trans          &trans      &trans      &kp GRAVE    &kp EQUAL    &kp MINUS             &trans           &trans          &trans      &trans      &trans      &trans
                                         &kp LCTRL    &trans         &kp RET             &kp SPACE        &trans          &trans
             >;
