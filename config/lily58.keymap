@@ -34,7 +34,7 @@
         COMBO(win,&kp RGUI, 56 57)
         COMBO(esc,&kp ESC, 12 13)
         COMBO(delte,&kp DEL, 22 23)
-        COMBO(at,&kp LA(LC(Q)), 12 24)
+        COMBO(at,&kp LA(LC(Q)), 13 25)
     }; //The first parameter is just an internal name, the second one the keypress we want to execute during the combo, and the last one is for the key positions.
 
 
