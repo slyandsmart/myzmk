@@ -28,9 +28,9 @@
 
         combos {
     compatible = "zmk,combos";
-        COMBO(ue, &kp LBKT, 7 3)
-        COMBO(ae, &kp SQT, 13 3)
-        COMBO(oe, &kp SEMI, 9 3)
+        COMBO(ue, &kp LBKT, 19 15)
+        COMBO(ae, &kp SQT, 25 15)
+        COMBO(oe, &kp SEMI, 21 15)
         COMBO(win,&kp RGUI, 56 57)
         COMBO(esc,&kp ESC, 12 13)
         COMBO(delte,&kp DEL, 22 23)
